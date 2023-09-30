@@ -1,0 +1,11 @@
+# Pastas geradas pelo Visual Studio
+.vscode/
+.vs/
+/bin/
+/obj/
+/packages/
+/.idea/
+/.vs/
+*.suo
+*.user
+*.sln.docstates
