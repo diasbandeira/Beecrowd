@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Beecrowd
 {
@@ -10,9 +6,12 @@ namespace Beecrowd
     {
         public AreaDoCirculo()
         {
-            double input = Double.Parse(Console.ReadLine());
-
-            Console.WriteLine(input);
+            double raio = Convert.ToDouble(Console.ReadLine());
+            double n = 3.14159;
+            double area = n * Convert.ToDouble(Math.Pow(raio, 2));
+            
+            
+            Console.WriteLine("A={0:F4}", area);
         }
     }
 }

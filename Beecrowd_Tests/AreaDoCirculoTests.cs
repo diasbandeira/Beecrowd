@@ -34,5 +34,43 @@ namespace Beecrowd_Tests
             //Assert.AreEqual("Hello World!" + Environment.NewLine, outPut);
             Assert.AreEqual(expected + Environment.NewLine, outPut);
         }
+
+        [Test]
+        public void AreaDoCirculo10064()
+        {
+            StringReader input = new StringReader("100.64 \n");
+            string expected = "A=31819.3103";
+            StringWriter stringWriter = new StringWriter();
+
+            Console.SetIn(input);
+
+            Console.SetOut(stringWriter);
+            _ = new AreaDoCirculo();
+            string outPut = stringWriter.ToString();
+            Console.SetOut(Console.Out);
+
+            //Assert.AreEqual("Hello World!" + Environment.NewLine, outPut);
+            Assert.AreEqual(expected + Environment.NewLine, outPut);
+        }
+
+        [Test]
+        public void AreaDoCirculo15000()
+        {
+            StringReader input = new StringReader("150.00 \n");
+            string expected = "A=70685.7750";
+            StringWriter stringWriter = new StringWriter();
+
+            Console.SetIn(input);
+
+            Console.SetOut(stringWriter);
+            _ = new AreaDoCirculo();
+            string outPut = stringWriter.ToString();
+            Console.SetOut(Console.Out);
+
+            //Assert.AreEqual("Hello World!" + Environment.NewLine, outPut);
+            Assert.AreEqual(expected + Environment.NewLine, outPut);
+        }
+
+
     }
 }
